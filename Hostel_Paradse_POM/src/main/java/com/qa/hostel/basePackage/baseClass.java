@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -70,6 +71,12 @@ public class baseClass {
 		
 		// launch the base url		
 		driver.get(url);
+	}
+	
+	public static void login() {
+		driver.findElement(By.name("username")).sendKeys(prop.getProperty("username"));
+		driver.findElement(By.name("password")).sendKeys(prop.getProperty("password"));
+		driver.findElement(By.tagName("button")).click();		
 	}
 	
 	

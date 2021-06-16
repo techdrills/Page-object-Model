@@ -1,0 +1,10 @@
+<suite name = "Pardise Hostel Automate TestCases">
+	<test name = "Data driven framework with POM">	
+	<classes name = "POM Clasees">
+			
+		 	<class name = "com.qa.hostel.testPackage.loginPageTest"></class>   
+			<class name = "com.qa.hostel.testPackage.homePageTest"></class>
+			
+		</classes>
+	</test>
+</suite>
